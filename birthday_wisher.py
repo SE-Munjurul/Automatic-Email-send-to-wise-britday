@@ -36,10 +36,9 @@ for index, row in df.iterrows():
     birthday = datetime.strptime(row["Birthday"], "%Y-%m-%d").strftime("%m-%d")
     if birthday == today:
         subject = "Happy Birthday!"
-        # বার্তার মেসেজ পরিবর্তন করুন
+    
         body = f"Happy Birthday, {row['Name']}!"
         
-        # আপনার নামের উপরে ভিত্তি করে বার্তার মেসেজ পরিবর্তন করুন
         if row['Name'] == "Munjurul":
             body += " Wishing you all the best on your special day! Have a fantastic birthday!"
         else:
